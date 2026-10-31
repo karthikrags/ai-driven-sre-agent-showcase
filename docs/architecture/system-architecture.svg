@@ -9,10 +9,9 @@
 <g filter="url(#shadow)"><rect x="55" y="155" width="430" height="285" rx="18" fill="#eaf2ff" stroke="#2b63b5" stroke-width="2.5"/></g>
 <text x="75" y="184" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="1.2" fill="#2b63b5">01  DETECTION</text>
 <text x="75" y="216" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="20" font-weight="730" fill="#17375e">Kubernetes / OpenShift</text>
-<text x="77" y="246" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15.5" fill="#182433">20 isolated demonstration scenarios</text>
-<text x="77" y="273" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15.5" fill="#182433">Custom PrometheusRule resources</text>
-<text x="77" y="300" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15.5" fill="#182433">Metrics evaluated by Prometheus</text>
-<text x="77" y="327" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15.5" fill="#182433">Firing notifications sent to Alertmanager</text>
+<text x="77" y="246" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15.5" fill="#182433">Scenario workloads + custom rules</text>
+<text x="77" y="273" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15.5" fill="#182433">Prometheus evaluates cluster metrics</text>
+<text x="77" y="300" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15.5" fill="#182433">Firing notifications sent to Alertmanager</text>
 <g filter="url(#shadow)"><rect x="510" y="155" width="430" height="285" rx="18" fill="#eaf2ff" stroke="#2b63b5" stroke-width="2.5"/></g>
 <text x="530" y="184" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="1.2" fill="#2b63b5">02  ALERT ROUTING</text>
 <text x="530" y="216" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="20" font-weight="730" fill="#17375e">SRE Alert Receiver</text>
@@ -30,21 +29,20 @@
 <g filter="url(#shadow)"><rect x="1420" y="155" width="430" height="285" rx="18" fill="#f3edff" stroke="#7653bd" stroke-width="2.5"/></g>
 <text x="1440" y="184" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="1.2" fill="#7653bd">04  AI DIAGNOSIS</text>
 <text x="1440" y="216" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="20" font-weight="730" fill="#30204c">Evidence-based RCA</text>
-<text x="1442" y="246" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15.5" fill="#182433">Configured LLM provider</text>
-<text x="1442" y="273" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15.5" fill="#182433">RAG retrieves Markdown references</text>
-<text x="1442" y="300" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15.5" fill="#182433">Runbooks, SOPs, Kubernetes docs</text>
-<text x="1442" y="327" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15.5" fill="#182433">Diagnosis includes uncertainty and limits</text>
+<text x="1442" y="246" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15.5" fill="#182433">Configured LLM provider + RAG</text>
+<text x="1442" y="273" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15.5" fill="#182433">Runbooks, SOPs, Kubernetes docs</text>
+<text x="1442" y="300" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15.5" fill="#182433">RCA with uncertainty posted to Slack</text>
+<text x="1442" y="327" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15.5" fill="#182433">Investigation does not authorize changes</text>
 <g filter="url(#shadow)"><rect x="55" y="525" width="430" height="285" rx="18" fill="#fff2df" stroke="#d77c20" stroke-width="2.5"/></g>
 <text x="75" y="554" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="1.2" fill="#d77c20">05  PROPOSAL &amp; DRY-RUN</text>
 <text x="75" y="586" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="20" font-weight="730" fill="#4b2d0d">Remediation API</text>
 <text x="77" y="616" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15.5" fill="#182433">Slack Remediate starts preparation</text>
 <text x="77" y="643" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15.5" fill="#182433">Scenario catalog + action allowlist</text>
-<text x="77" y="670" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15.5" fill="#182433">Policy and resource-scope checks</text>
-<text x="77" y="697" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15.5" fill="#182433">Server-side dry-run; proposal persisted</text>
-<text x="77" y="724" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15.5" fill="#182433">No Kubernetes write at this stage</text>
+<text x="77" y="670" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15.5" fill="#182433">Policy + scope; server-side dry-run</text>
+<text x="77" y="697" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15.5" fill="#182433">Persisted proposal; no Kubernetes write</text>
 <g filter="url(#shadow)"><rect x="510" y="525" width="430" height="285" rx="18" fill="#fff2df" stroke="#d77c20" stroke-width="2.5"/></g>
 <text x="530" y="554" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="1.2" fill="#d77c20">06  HUMAN APPROVAL</text>
-<text x="530" y="586" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="20" font-weight="730" fill="#4b2d0d">Explicit Slack decision</text>
+<text x="530" y="586" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="20" font-weight="730" fill="#4b2d0d">Slack approval card</text>
 <text x="532" y="616" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15.5" fill="#182433">Authenticated approver reviews exact action</text>
 <text x="532" y="643" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15.5" fill="#182433">Approve &amp; Execute or Reject</text>
 <text x="532" y="670" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15.5" fill="#182433">Message binding and expiry checks</text>
@@ -61,8 +59,8 @@
 <text x="1440" y="586" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="20" font-weight="730" fill="#173c22">Recovery evidence</text>
 <text x="1442" y="616" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15.5" fill="#182433">Rollout, pod readiness, endpoints</text>
 <text x="1442" y="643" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15.5" fill="#182433">Applicable Prometheus alert state</text>
-<text x="1442" y="670" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15.5" fill="#182433">Slack outcome + incident lifecycle</text>
-<text x="1442" y="697" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15.5" fill="#182433">Close when verified; otherwise escalate</text>
+<text x="1442" y="670" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15.5" fill="#182433">Post Slack outcome + lifecycle event</text>
+<text x="1442" y="697" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15.5" fill="#182433">Close if verified; otherwise escalate</text>
 <text x="1442" y="724" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15.5" fill="#182433">Rollback needs separate approval</text>
 <path d="M491 297.5 H498" fill="none" stroke="#536273" stroke-width="3"  marker-end="url(#arrow)"/>
 <path d="M946 297.5 H953" fill="none" stroke="#536273" stroke-width="3"  marker-end="url(#arrow)"/>
@@ -77,7 +75,7 @@
 <text x="75" y="933" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17" font-weight="730" fill="#17375e">OBSERVABILITY</text>
 <text x="77" y="968" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14.3" fill="#182433">Prometheus + Alertmanager</text>
 <text x="77" y="995" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14.3" fill="#182433">Service logs + lifecycle events</text>
-<text x="77" y="1022" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14.3" fill="#182433">Read-only Command Center</text>
+<text x="77" y="1022" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14.3" fill="#182433">Read-only SRE Ops Dashboard</text>
 <g filter="url(#shadow)"><rect x="425" y="895" width="330" height="205" rx="18" fill="#f0f2f5" stroke="#6c7785" stroke-width="2.5"/></g>
 <text x="445" y="933" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17" font-weight="730" fill="#26323e">AUDIT</text>
 <text x="447" y="968" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14.3" fill="#182433">Incident and approval records</text>
@@ -96,8 +94,8 @@
 <text x="1187" y="1022" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14.3" fill="#182433">MCP RAG retrieval</text>
 <g filter="url(#shadow)"><rect x="1535" y="895" width="330" height="205" rx="18" fill="#e7f8f5" stroke="#17867d" stroke-width="2.5"/></g>
 <text x="1555" y="933" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17" font-weight="730" fill="#103b38">USER INTERFACES</text>
-<text x="1557" y="968" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14.3" fill="#182433">Slack investigation + approvals</text>
-<text x="1557" y="995" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14.3" fill="#182433">SRE Command Center</text>
+<text x="1557" y="968" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14.3" fill="#182433">Slack RCA · proposal · approval · outcome</text>
+<text x="1557" y="995" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14.3" fill="#182433">SRE Ops Dashboard / Command Center</text>
 <text x="1557" y="1022" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14.3" fill="#182433">Token-scoped observation API</text>
 <rect x="55" y="1132" width="1800" height="112" rx="18" fill="#15263d"/>
 <text x="82" y="1176" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="19" font-weight="750" fill="#ffffff">TRUST BOUNDARY</text>

@@ -1,6 +1,6 @@
 flowchart TB
   subgraph DETECT["01 · Detection"]
-    K8S["Kubernetes / OpenShift<br/>20 demonstration scenarios"] --> PR["Custom PrometheusRule resources"]
+    K8S["Kubernetes / OpenShift workloads"] --> PR["Custom PrometheusRule resources"]
     PR --> PROM["Prometheus metric evaluation"] --> AM["Alertmanager notification"]
   end
   subgraph ROUTE["02 · Alert routing"]
@@ -19,13 +19,13 @@ flowchart TB
     RAG --> RCA
   end
   subgraph PROPOSE["05 · Proposal and server-side dry-run · NO WRITE"]
-    RCA --> SLACK1["Slack investigation message · Remediate"]
-    SLACK1 --> REMAPI["Remediation API"]
+    RCA --> SLACK1["Post RCA to Slack investigation thread"]
+    SLACK1 -->|Remediate| REMAPI["Remediation API"]
     REMAPI --> POLICY["Scenario catalog · policy · action allowlist · scoped target"]
     POLICY --> DRY["Kubernetes server-side dry-run"] --> PROP[("Persisted proposal")]
   end
   subgraph APPROVE["06 · Human approval boundary"]
-    PROP --> CARD["Slack interactive proposal card"]
+    PROP --> CARD["Slack proposal card · Approve & Execute / Reject"]
     CARD -->|Authenticated Approve & Execute| AUTH["Identity · expiry · binding · replay checks"]
     CARD -->|Reject| REJECT["Persist rejection · no write"]
     AUTH -->|Only after approval| GATE{"Authorized exact action?"}
@@ -38,17 +38,17 @@ flowchart TB
   subgraph VERIFY["08 · Verification and closure"]
     APIWRITE --> VERIFY1["Rollout · pod readiness · endpoints · alert state"]
     VERIFY1 --> OUT["Slack outcome + incident lifecycle"]
-    OUT -->|Verified recovery| CLOSE["Close incident"]
+    OUT -->|Slack outcome · verified recovery| CLOSE["Close incident"]
     OUT -->|Failed / uncertain| ESC["Escalate / inspect"]
     ESC --> ROLLBACK["Rollback proposal from snapshot"]
     ROLLBACK -->|Separate authenticated approval| CARD
   end
   subgraph CROSS["CROSS-CUTTING CONTROLS"]
-    OBS["OBSERVABILITY<br/>Prometheus · Alertmanager · logs · lifecycle · Command Center"]
+    OBS["OBSERVABILITY<br/>Prometheus · Alertmanager · logs · lifecycle · SRE Ops Dashboard"]
     AUD["AUDIT<br/>incidents · approvals · policy decisions · execution · rollback"]
     SEC["SECURITY<br/>read-first · scoped RBAC · allowlists · dry-run · approval · replay protection"]
     KNOW["KNOWLEDGE<br/>runbooks · SOPs · Kubernetes documentation · RAG"]
-    UI["INTERFACES<br/>Slack workflow · read-only SRE Command Center"]
+    UI["INTERFACES<br/>Slack RCA · proposal · approval · outcome · SRE Ops Dashboard / Command Center"]
   end
   INC -. persisted state .-> OBS
   EXEC -. events .-> AUD

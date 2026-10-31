@@ -28,14 +28,14 @@
 <circle cx="1468" cy="205" r="26" fill="#7653bd"/>
 <text x="1468" y="212" text-anchor="middle" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="20" font-weight="750" fill="#ffffff">04</text>
 <text x="1508" y="212" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="19" font-weight="750" fill="#30204c">AI DIAGNOSIS</text>
-<text x="1448" y="273" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18" fill="#182433">LLM reasoning with</text>
-<text x="1448" y="305" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18" fill="#182433">RAG-backed evidence</text>
+<text x="1448" y="273" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18" fill="#182433">RAG-backed RCA posted</text>
+<text x="1448" y="305" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18" fill="#182433">to the Slack thread</text>
 <g filter="url(#shadow)"><rect x="55" y="550" width="430" height="230" rx="24" fill="#fff2df" stroke="#d77c20" stroke-width="3"/></g>
 <circle cx="103" cy="600" r="26" fill="#d77c20"/>
 <text x="103" y="607" text-anchor="middle" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="20" font-weight="750" fill="#ffffff">05</text>
 <text x="143" y="607" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="19" font-weight="750" fill="#4b2d0d">PROPOSAL &amp;amp; DRY-RUN</text>
-<text x="83" y="668" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18" fill="#182433">Policy-bounded proposal;</text>
-<text x="83" y="700" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18" fill="#182433">no Kubernetes write</text>
+<text x="83" y="668" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18" fill="#182433">Slack Remediate; policy</text>
+<text x="83" y="700" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18" fill="#182433">dry-run, proposal only</text>
 <g filter="url(#shadow)"><rect x="510" y="550" width="430" height="230" rx="24" fill="#fff2df" stroke="#d77c20" stroke-width="3"/></g>
 <circle cx="558" cy="600" r="26" fill="#d77c20"/>
 <text x="558" y="607" text-anchor="middle" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="20" font-weight="750" fill="#ffffff">06</text>
@@ -52,8 +52,8 @@
 <circle cx="1468" cy="600" r="26" fill="#31834b"/>
 <text x="1468" y="607" text-anchor="middle" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="20" font-weight="750" fill="#ffffff">08</text>
 <text x="1508" y="607" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="19" font-weight="750" fill="#173c22">VERIFY &amp; CLOSE</text>
-<text x="1448" y="668" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18" fill="#182433">Check recovery and</text>
-<text x="1448" y="700" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18" fill="#182433">record the outcome</text>
+<text x="1448" y="668" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18" fill="#182433">Verify recovery; post</text>
+<text x="1448" y="700" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18" fill="#182433">Slack outcome</text>
 <path d="M492 270 H498" fill="none" stroke="#536273" stroke-width="4"  marker-end="url(#arrow)"/>
 <path d="M947 270 H953" fill="none" stroke="#536273" stroke-width="4"  marker-end="url(#arrow)"/>
 <path d="M1402 270 H1408" fill="none" stroke="#536273" stroke-width="4"  marker-end="url(#arrow)"/>

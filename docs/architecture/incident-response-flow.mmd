@@ -1,12 +1,12 @@
 flowchart TB
   subgraph ROW1["DETECT · INVESTIGATE"]
     direction LR
-    S01["01 · AUTOMATED DETECTION<br/>Prometheus evaluates scenario rules"] --> S02["02 · ALERT ROUTING<br/>Alertmanager notifies SRE receiver"] --> S03["03 · EVIDENCE COLLECTION<br/>OpenClaw + read-only Kubernetes MCP"] --> S04["04 · AI DIAGNOSIS<br/>LLM reasoning + RAG-backed RCA"]
+    S01["01 · AUTOMATED DETECTION<br/>Prometheus evaluates configured rules"] --> S02["02 · ALERT ROUTING<br/>Alertmanager notifies SRE receiver"] --> S03["03 · EVIDENCE COLLECTION<br/>OpenClaw + read-only Kubernetes MCP"] --> S04["04 · AI DIAGNOSIS<br/>RAG-backed RCA posted to Slack"]
   end
   S04 --> S05
   subgraph ROW2["PROPOSE · AUTHORIZE · RECOVER"]
     direction LR
-    S05["05 · PROPOSAL & DRY-RUN<br/>Policy-bounded change; no write"] --> S06["06 · HUMAN APPROVAL<br/>Authenticated Slack decision"] --> S07["07 · CONTROLLED EXECUTION<br/>One approved action; scoped RBAC"] --> S08["08 · VERIFY & CLOSE<br/>Check recovery; audit outcome"]
+    S05["05 · PROPOSAL & DRY-RUN<br/>Slack Remediate; no write yet"] --> S06["06 · HUMAN APPROVAL<br/>Authenticated Slack decision"] --> S07["07 · CONTROLLED EXECUTION<br/>One approved action; scoped RBAC"] --> S08["08 · VERIFY & CLOSE<br/>Recovery check + Slack outcome"]
   end
   BANNER["HUMAN-IN-THE-LOOP: AI investigates and proposes; Kubernetes execution and rollback require explicit authenticated approval."]
   S08 --> BANNER

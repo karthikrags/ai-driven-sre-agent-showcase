@@ -2,7 +2,7 @@ flowchart TB
   P["Prometheus"] --> A["Alertmanager"] --> R["SRE Alert Receiver"] --> O["OpenClaw"] --> M["Kubernetes MCP + RAG"] --> I["AI Investigation"] --> RCA["Slack RCA"] --> ACT["Remediate"] --> API["Remediation API"] --> POLICY["Policy validation"] --> DRY["Kubernetes server-side dry-run"] --> APPROVAL["Slack authenticated approval"] --> EXEC["Controlled Kubernetes execution"] --> VERIFY["Recovery verification"] --> CLOSE["Incident closure"]
   R --> INC[("Incident persistence")]
   API --> AUD[("Policy, proposal, execution and rollback audit")]
-  INC --> OBS["Observation API"] --> CC["SRE Command Center · read-only"]
+  INC --> OBS["Observation API"] --> CC["SRE Ops Dashboard / Command Center · read-only"]
   EXEC -->|Scoped RBAC| KAPI["Kubernetes API · one approved patch"]
   KAPI --> VERIFY
   RCA --> REASSESS["Reassess"] --> O

@@ -77,8 +77,8 @@
 <text x="87" y="1528" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="16" fill="#182433">Redacted, token-scoped read model</text>
 <path d="M680 1580 H580" fill="none" stroke="#6c7785" stroke-width="3"  marker-end="url(#arrow)"/>
 <g filter="url(#shadow)"><rect x="65" y="1620" width="490" height="112" rx="18" fill="#f0f2f5" stroke="#6c7785" stroke-width="2.5"/></g>
-<text x="85" y="1658" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="21" font-weight="730" fill="#26323e">SRE Command Center</text>
-<text x="87" y="1688" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="16" fill="#182433">Read-only dashboard, incidents + audit</text>
+<text x="85" y="1658" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="21" font-weight="730" fill="#26323e">SRE Ops Dashboard</text>
+<text x="87" y="1688" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="16" fill="#182433">Command Center · incidents + audit</text>
 <path d="M310 1588 V1610" fill="none" stroke="#6c7785" stroke-width="3"  marker-end="url(#arrow)"/>
 <g filter="url(#shadow)"><rect x="1320" y="790" width="490" height="140" rx="18" fill="#f3edff" stroke="#7653bd" stroke-width="2.5"/></g>
 <text x="1340" y="828" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="21" font-weight="730" fill="#30204c">Slack lifecycle actions</text>

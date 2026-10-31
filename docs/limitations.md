@@ -11,6 +11,10 @@
 
 ## Future work
 
-- Expand repeatable, scenario-specific validation for proposal, dry-run, approval, execution, verification, and audit.
-- Improve reproducible deployment, image provenance, signing, dependency pinning, and software bill of materials.
-- Add additional environment-specific operational and failure-injection guidance after security review.
+- Build a RAG MLOps pipeline for automated document ingestion, validation, versioning, and retrieval-quality testing.
+- Extend the single-environment design to multi-cluster operation with explicit tenant/cluster scope, per-cluster identities, and separate policy review.
+- Expand the existing allowlisted remediation catalog with low-risk SOP actions while retaining dry-run and authenticated human approval.
+- Add a reviewed incident-learning loop that curates sanitized RCAs and outcomes into RAG with provenance and quality checks.
+- Extend duplicate suppression into explainable correlation of related alerts.
+- Add advisory predictive SRE signals for drift, capacity, certificate expiry, and failure trends; keep the existing approval boundary for writes.
+- Expand scenario-specific end-to-end validation, deployment reproducibility, image provenance, signing, dependency pinning, and SBOM generation.

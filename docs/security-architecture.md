@@ -2,7 +2,7 @@
 
 ## Read-only investigation
 
-OpenClaw invokes the Kubernetes MCP service for allowlisted evidence collection. Its investigation role is read-only and separate from the remediation execution identity. The Command Center uses a distinct token-scoped observation API and has neither Kubernetes credentials nor direct database access.
+OpenClaw invokes the Kubernetes MCP service for allowlisted evidence collection. Its investigation role is read-only and separate from the remediation execution identity. The SRE Ops Dashboard (Command Center) uses a distinct token-scoped observation API and has neither Kubernetes credentials nor direct database access. Slack carries the investigation and the separately authenticated approval workflow.
 
 ## Controlled write path
 

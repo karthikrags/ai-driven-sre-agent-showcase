@@ -1,6 +1,6 @@
 # Project overview
 
-The AI-Driven SRE Agent joins Kubernetes monitoring, read-only investigation, policy-bounded remediation preparation, authenticated operator approval, controlled recovery, and an audit-backed read-only Command Center.
+The AI-Driven SRE Agent joins Kubernetes monitoring, read-only investigation, policy-bounded remediation preparation, authenticated Slack approval, controlled recovery, and an audit-backed read-only SRE Ops Dashboard (Command Center).
 
 ## Services
 
@@ -10,7 +10,7 @@ The AI-Driven SRE Agent joins Kubernetes monitoring, read-only investigation, po
 - **Kubernetes MCP:** expose scoped read operations and RAG search to the investigation.
 - **Remediation API / execution service:** validate policy, prepare server-side dry-runs, bind approval, execute only an approved operation, verify, and persist lifecycle/audit state.
 - **Slack:** present investigation, Remediate, proposal review, authenticated approval or rejection, and outcome interactions.
-- **SRE Command Center:** display token-scoped observations without direct cluster or database access.
+- **SRE Ops Dashboard (Command Center):** display token-scoped observations without direct cluster or database access.
 
 ## Evidence and limits
 
