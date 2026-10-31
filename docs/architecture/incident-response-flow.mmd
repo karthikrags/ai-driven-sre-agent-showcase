@@ -1,0 +1,24 @@
+flowchart TB
+  subgraph ROW1["DETECT · INVESTIGATE"]
+    direction LR
+    S01["01 · AUTOMATED DETECTION<br/>Prometheus evaluates scenario rules"] --> S02["02 · ALERT ROUTING<br/>Alertmanager notifies SRE receiver"] --> S03["03 · EVIDENCE COLLECTION<br/>OpenClaw + read-only Kubernetes MCP"] --> S04["04 · AI DIAGNOSIS<br/>LLM reasoning + RAG-backed RCA"]
+  end
+  S04 --> S05
+  subgraph ROW2["PROPOSE · AUTHORIZE · RECOVER"]
+    direction LR
+    S05["05 · PROPOSAL & DRY-RUN<br/>Policy-bounded change; no write"] --> S06["06 · HUMAN APPROVAL<br/>Authenticated Slack decision"] --> S07["07 · CONTROLLED EXECUTION<br/>One approved action; scoped RBAC"] --> S08["08 · VERIFY & CLOSE<br/>Check recovery; audit outcome"]
+  end
+  BANNER["HUMAN-IN-THE-LOOP: AI investigates and proposes; Kubernetes execution and rollback require explicit authenticated approval."]
+  S08 --> BANNER
+  classDef blue fill:#eaf2ff,stroke:#2b63b5,color:#102744,stroke-width:2px
+  classDef teal fill:#e7f8f5,stroke:#17867d,color:#103b38,stroke-width:2px
+  classDef purple fill:#f3edff,stroke:#7653bd,color:#30204c,stroke-width:2px
+  classDef orange fill:#fff2df,stroke:#d77c20,color:#4b2d0d,stroke-width:2px
+  classDef green fill:#e9f7ed,stroke:#31834b,color:#173c22,stroke-width:2px
+  classDef gray fill:#344356,stroke:#344356,color:#ffffff,stroke-width:2px
+  class S01,S02 blue
+  class S03 teal
+  class S04 purple
+  class S05,S06 orange
+  class S07,S08 green
+  class BANNER gray

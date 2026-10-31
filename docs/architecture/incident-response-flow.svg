@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc">
+<title id="title">AI-DRIVEN OPERATIONS — INCIDENT RESPONSE FLOW</title><desc id="desc">Eight-stage human-governed response · university presentation edition</desc>
+<defs><filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#1b2c42" flood-opacity=".12"/></filter>
+<marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M1 1 L11 6 L1 11 Z" fill="#536273"/></marker>
+<marker id="arrowWhite" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M1 1 L11 6 L1 11 Z" fill="#ffffff"/></marker></defs>
+<rect width="1920" height="1080" fill="#f7f9fc"/>
+<text x="64" y="66" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="36" font-weight="750" fill="#15263d">AI-DRIVEN OPERATIONS — INCIDENT RESPONSE FLOW</text>
+<text x="64" y="105" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18" fill="#536273">Eight-stage human-governed response · university presentation edition</text>
+<g filter="url(#shadow)"><rect x="55" y="155" width="430" height="230" rx="24" fill="#eaf2ff" stroke="#2b63b5" stroke-width="3"/></g>
+<circle cx="103" cy="205" r="26" fill="#2b63b5"/>
+<text x="103" y="212" text-anchor="middle" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="20" font-weight="750" fill="#ffffff">01</text>
+<text x="143" y="212" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="19" font-weight="750" fill="#17375e">AUTOMATED DETECTION</text>
+<text x="83" y="273" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18" fill="#182433">Prometheus evaluates</text>
+<text x="83" y="305" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18" fill="#182433">scenario alert rules</text>
+<g filter="url(#shadow)"><rect x="510" y="155" width="430" height="230" rx="24" fill="#eaf2ff" stroke="#2b63b5" stroke-width="3"/></g>
+<circle cx="558" cy="205" r="26" fill="#2b63b5"/>
+<text x="558" y="212" text-anchor="middle" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="20" font-weight="750" fill="#ffffff">02</text>
+<text x="598" y="212" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="19" font-weight="750" fill="#17375e">ALERT ROUTING</text>
+<text x="538" y="273" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18" fill="#182433">Alertmanager notifies</text>
+<text x="538" y="305" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18" fill="#182433">the SRE receiver</text>
+<g filter="url(#shadow)"><rect x="965" y="155" width="430" height="230" rx="24" fill="#e7f8f5" stroke="#17867d" stroke-width="3"/></g>
+<circle cx="1013" cy="205" r="26" fill="#17867d"/>
+<text x="1013" y="212" text-anchor="middle" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="20" font-weight="750" fill="#ffffff">03</text>
+<text x="1053" y="212" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="19" font-weight="750" fill="#103b38">EVIDENCE COLLECTION</text>
+<text x="993" y="273" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18" fill="#182433">OpenClaw + read-only</text>
+<text x="993" y="305" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18" fill="#182433">Kubernetes MCP</text>
+<g filter="url(#shadow)"><rect x="1420" y="155" width="430" height="230" rx="24" fill="#f3edff" stroke="#7653bd" stroke-width="3"/></g>
+<circle cx="1468" cy="205" r="26" fill="#7653bd"/>
+<text x="1468" y="212" text-anchor="middle" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="20" font-weight="750" fill="#ffffff">04</text>
+<text x="1508" y="212" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="19" font-weight="750" fill="#30204c">AI DIAGNOSIS</text>
+<text x="1448" y="273" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18" fill="#182433">LLM reasoning with</text>
+<text x="1448" y="305" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18" fill="#182433">RAG-backed evidence</text>
+<g filter="url(#shadow)"><rect x="55" y="550" width="430" height="230" rx="24" fill="#fff2df" stroke="#d77c20" stroke-width="3"/></g>
+<circle cx="103" cy="600" r="26" fill="#d77c20"/>
+<text x="103" y="607" text-anchor="middle" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="20" font-weight="750" fill="#ffffff">05</text>
+<text x="143" y="607" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="19" font-weight="750" fill="#4b2d0d">PROPOSAL &amp;amp; DRY-RUN</text>
+<text x="83" y="668" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18" fill="#182433">Policy-bounded proposal;</text>
+<text x="83" y="700" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18" fill="#182433">no Kubernetes write</text>
+<g filter="url(#shadow)"><rect x="510" y="550" width="430" height="230" rx="24" fill="#fff2df" stroke="#d77c20" stroke-width="3"/></g>
+<circle cx="558" cy="600" r="26" fill="#d77c20"/>
+<text x="558" y="607" text-anchor="middle" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="20" font-weight="750" fill="#ffffff">06</text>
+<text x="598" y="607" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="19" font-weight="750" fill="#4b2d0d">HUMAN APPROVAL</text>
+<text x="538" y="668" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18" fill="#182433">Authenticated Slack</text>
+<text x="538" y="700" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18" fill="#182433">approval or rejection</text>
+<g filter="url(#shadow)"><rect x="965" y="550" width="430" height="230" rx="24" fill="#fff2df" stroke="#d77c20" stroke-width="3"/></g>
+<circle cx="1013" cy="600" r="26" fill="#d77c20"/>
+<text x="1013" y="607" text-anchor="middle" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="20" font-weight="750" fill="#ffffff">07</text>
+<text x="1053" y="607" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="19" font-weight="750" fill="#4b2d0d">CONTROLLED EXECUTION</text>
+<text x="993" y="668" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18" fill="#182433">One approved action;</text>
+<text x="993" y="700" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18" fill="#182433">scoped write access</text>
+<g filter="url(#shadow)"><rect x="1420" y="550" width="430" height="230" rx="24" fill="#e9f7ed" stroke="#31834b" stroke-width="3"/></g>
+<circle cx="1468" cy="600" r="26" fill="#31834b"/>
+<text x="1468" y="607" text-anchor="middle" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="20" font-weight="750" fill="#ffffff">08</text>
+<text x="1508" y="607" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="19" font-weight="750" fill="#173c22">VERIFY &amp; CLOSE</text>
+<text x="1448" y="668" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18" fill="#182433">Check recovery and</text>
+<text x="1448" y="700" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18" fill="#182433">record the outcome</text>
+<path d="M492 270 H498" fill="none" stroke="#536273" stroke-width="4"  marker-end="url(#arrow)"/>
+<path d="M947 270 H953" fill="none" stroke="#536273" stroke-width="4"  marker-end="url(#arrow)"/>
+<path d="M1402 270 H1408" fill="none" stroke="#536273" stroke-width="4"  marker-end="url(#arrow)"/>
+<path d="M1848 270 H1890 V510 H270 V537" fill="none" stroke="#536273" stroke-width="4"  marker-end="url(#arrow)"/>
+<text x="965" y="497" text-anchor="middle" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="16" font-weight="650" fill="#536273">CONTINUE TO 05</text>
+<path d="M492 665 H498" fill="none" stroke="#536273" stroke-width="4"  marker-end="url(#arrow)"/>
+<path d="M947 665 H953" fill="none" stroke="#536273" stroke-width="4"  marker-end="url(#arrow)"/>
+<path d="M1402 665 H1408" fill="none" stroke="#536273" stroke-width="4"  marker-end="url(#arrow)"/>
+<rect x="55" y="865" width="1800" height="145" rx="22" fill="#15263d"/>
+<text x="88" y="919" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="16" font-weight="750" letter-spacing="1.5" fill="#9fc5ff">HUMAN-IN-THE-LOOP</text>
+<text x="88" y="963" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="22" font-weight="650" fill="#ffffff">AI investigates and proposes; Kubernetes execution and rollback require explicit authenticated approval.</text>
+</svg>

@@ -1,0 +1,23 @@
+flowchart TB
+  P["Prometheus"] --> A["Alertmanager"] --> R["SRE Alert Receiver"] --> O["OpenClaw"] --> M["Kubernetes MCP + RAG"] --> I["AI Investigation"] --> RCA["Slack RCA"] --> ACT["Remediate"] --> API["Remediation API"] --> POLICY["Policy validation"] --> DRY["Kubernetes server-side dry-run"] --> APPROVAL["Slack authenticated approval"] --> EXEC["Controlled Kubernetes execution"] --> VERIFY["Recovery verification"] --> CLOSE["Incident closure"]
+  R --> INC[("Incident persistence")]
+  API --> AUD[("Policy, proposal, execution and rollback audit")]
+  INC --> OBS["Observation API"] --> CC["SRE Command Center · read-only"]
+  EXEC -->|Scoped RBAC| KAPI["Kubernetes API · one approved patch"]
+  KAPI --> VERIFY
+  RCA --> REASSESS["Reassess"] --> O
+  RCA --> ASK["Ask AI"] --> O
+  VERIFY -->|Failure / eligible snapshot| RB["Rollback proposal"] --> RBA["Separate Slack approval"] --> EXEC
+  KNOW["Runbooks · SOPs · Kubernetes docs"] --> M
+  classDef blue fill:#eaf2ff,stroke:#2b63b5,color:#102744,stroke-width:2px
+  classDef teal fill:#e7f8f5,stroke:#17867d,color:#103b38,stroke-width:2px
+  classDef purple fill:#f3edff,stroke:#7653bd,color:#30204c,stroke-width:2px
+  classDef orange fill:#fff2df,stroke:#d77c20,color:#4b2d0d,stroke-width:2px
+  classDef green fill:#e9f7ed,stroke:#31834b,color:#173c22,stroke-width:2px
+  classDef gray fill:#f0f2f5,stroke:#6c7785,color:#26323e,stroke-width:2px
+  class P,A blue
+  class R,INC teal
+  class O,M,I,KNOW purple
+  class RCA,ACT,API,POLICY,DRY,APPROVAL,RB,RBA orange
+  class EXEC,KAPI,VERIFY,CLOSE green
+  class AUD,OBS,CC,REASSESS,ASK gray
